@@ -1,102 +1,340 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faisal Alrico</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CV digital Faisal Alrico dengan tampilan web bergaya Persona 3 Reload." />
+  <title>Faisal Alrico — CV Profile</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;900&family=Oxanium:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <div class="container">
-        <div class="profile">
-            <div class="profile-img">
-                <img src="img/profile.jpg" alt="Profile Picture">
+  <div class="p3-bg" aria-hidden="true">
+    <div class="p3-grid"></div>
+    <div class="p3-diagonals"></div>
+    <div class="p3-dots"></div>
+    <div class="p3-vignette"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#hero" aria-label="Faisal Alrico CV Home">
+      <span class="brand-mark">P3R</span>
+      <span>CV PROFILE</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Buka menu">
+      MENU
+    </button>
+
+    <nav class="nav" id="navMenu" aria-label="Navigasi CV">
+      <a href="#profile">Profile</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#ai">AI</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-watermark">PROFILE</div>
+
+      <div class="portrait-card reveal">
+        <div class="corner-label">P3-RELOAD // CV</div>
+        <div class="portrait-frame">
+          <img src="img/profile.jpg" alt="Foto formal Faisal Alrico" />
+        </div>
+
+        <div class="status-panel">
+          <div>
+            <span>LV.</span>
+            <strong>22</strong>
+          </div>
+          <div>
+            <span>EXP</span>
+            <strong>∞</strong>
+          </div>
+          <div class="motivation">
+            <span>MOTIVASI</span>
+            <strong>MAX</strong>
+            <div class="mini-bar" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
             </div>
-            <div class="profile-info">
-                <h1>Faisal Alrico</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-copy reveal">
+        <p class="kicker">CURRICULUM VITAE / PROFILE</p>
+        <h1>
+          <span>FAISAL</span>
+          <span>ALRICO</span>
+        </h1>
+
+        <div class="role-ribbon">
+          Mahasiswa UBP Karawang <b>•</b> Video Editor <b>•</b> AI Enthusiast
+        </div>
+
+        <div class="profile-panel" id="profile">
+          <div class="section-title">
+            <span class="icon">▶</span>
+            <h2>Profile</h2>
+          </div>
+
+          <p>
+            Mahasiswa UBP Karawang dengan ketertarikan pada dunia virtual, teknologi,
+            multimedia, dan AI. Berfokus pada desain visual, editing video, pengembangan UI,
+            serta eksplorasi proyek AI lokal dan analisis data sederhana. Memiliki semangat
+            belajar tinggi dan senang membangun proyek kreatif maupun teknis.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <a class="p3-btn" href="#projects">Open Projects</a>
+          <a class="p3-btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout-grid">
+      <div class="stack">
+        <article class="panel reveal" id="education">
+          <div class="section-title">
+            <span class="icon">▰</span>
+            <h2>Education</h2>
+          </div>
+
+          <ol class="timeline">
+            <li>
+              <span class="dot"></span>
+              <div>
+                <h3>SMKS ROSMA Karawang</h3>
+                <p>2020 – 2023</p>
+              </div>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <div>
+                <h3>SMPN 2 Telukjambe Timur</h3>
+                <p>2017 – 2020</p>
+              </div>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <div>
+                <h3>SDN Wadas IV</h3>
+                <p>2011 – 2017</p>
+              </div>
+            </li>
+          </ol>
+        </article>
+
+        <article class="panel reveal">
+          <div class="section-title">
+            <span class="icon">▣</span>
+            <h2>Experience</h2>
+          </div>
+
+          <ol class="timeline">
+            <li>
+              <span class="dot"></span>
+              <div>
+                <h3>PKL di PT Indonesian Thai Summit Auto</h3>
+                <p>20 November 2021 – 20 Mei 2022</p>
+              </div>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <div>
+                <h3>Magang di UBP Karawang — BOC Video Editor</h3>
+                <p>20 Agustus 2024 – Sekarang</p>
+              </div>
+            </li>
+          </ol>
+        </article>
+      </div>
+
+      <article class="panel skill-panel reveal" id="skills">
+        <div class="section-title">
+          <span class="icon">★</span>
+          <h2>Skills / Entertainment</h2>
+        </div>
+
+        <div class="skill-list">
+          <div class="skill" style="--value:92"><span>Adobe Photoshop</span><b></b></div>
+          <div class="skill" style="--value:90"><span>Adobe Premiere Pro</span><b></b></div>
+          <div class="skill" style="--value:86"><span>Adobe After Effects</span><b></b></div>
+          <div class="skill" style="--value:84"><span>Adobe Lightroom</span><b></b></div>
+          <div class="skill" style="--value:82"><span>Adobe Illustrator</span><b></b></div>
+          <div class="skill" style="--value:88"><span>Wondershare Filmora</span><b></b></div>
+          <div class="skill" style="--value:86"><span>CapCut</span><b></b></div>
+          <div class="skill" style="--value:80"><span>Clip Studio Paint</span><b></b></div>
+          <div class="skill" style="--value:83"><span>DaVinci Resolve</span><b></b></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="ai-section reveal" id="ai">
+      <div class="ai-header">
+        <div class="section-title">
+          <span class="icon">◆</span>
+          <h2>AI & Data</h2>
+        </div>
+
+        <p>
+          Fokus eksplorasi AI lokal, antarmuka aplikasi AI, analisis data, dan pemahaman
+          konsep NLP untuk kebutuhan pembelajaran maupun proyek personal.
+        </p>
+      </div>
+
+      <div class="tag-row">
+        <span>Ollama</span>
+        <span>Prompt Design</span>
+        <span>Sentiment Analysis</span>
+        <span>K-Means Clustering</span>
+        <span>Deep Learning NLP</span>
+        <span>UI Design for AI App</span>
+      </div>
+
+      <div class="project-list ai-projects">
+        <article>
+          <span class="project-icon">🤖</span>
+          <div>
+            <h3>YUI with Ollama</h3>
+            <p>UI asisten AI lokal berbasis Ollama dengan pendekatan personal assistant.</p>
+          </div>
+        </article>
+
+        <article>
+          <span class="project-icon">📊</span>
+          <div>
+            <h3>Sentiment Analysis</h3>
+            <p>Analisis sentimen untuk klasifikasi opini atau ulasan menggunakan pendekatan NLP.</p>
+          </div>
+        </article>
+
+        <article>
+          <span class="project-icon">🧑‍💻</span>
+          <div>
+            <h3>Face Scan Attendance UI</h3>
+            <p>Rancangan antarmuka presensi dengan fitur face scan.</p>
+          </div>
+        </article>
+
+        <article>
+          <span class="project-icon">🧩</span>
+          <div>
+            <h3>K-Means Clustering IPS</h3>
+            <p>Analisis pola nilai IPS mahasiswa per semester menggunakan clustering.</p>
+          </div>
+        </article>
+
+        <article>
+          <span class="project-icon">🧠</span>
+          <div>
+            <h3>Eksplorasi NLP</h3>
+            <p>Materi dan eksplorasi konsep RNN, LSTM, dan GRU untuk pemrosesan bahasa.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects-grid" id="projects">
+      <article class="panel reveal">
+        <div class="section-title">
+          <span class="icon">▱</span>
+          <h2>Proyek Lainnya</h2>
+        </div>
+
+        <div class="project-list">
+          <article>
+            <span class="project-icon">🎬</span>
+            <div>
+              <h3>Video Class Rewind 2018</h3>
+              <p>Video kenangan perjalanan kelas 7B1 hingga 8B1.</p>
+              <a href="https://www.youtube.com/watch?v=ZJ70inRjJCk" target="_blank" rel="noopener">Open Video</a>
             </div>
-        </div>
+          </article>
 
-        <div class="section">
-            <h2>Tentang Saya</h2>
-            <p>
-                Saya adalah salah satu Mahasiswa UBP Karawang yang memiliki ketertarikan pada Dunia Virtual.
-                <br>
-                Saya memiliki ambisi untuk menciptakan dunia virtualnya sendiri dimana saya bisa memerintah dan mengendalikan dunia ini.
-            </p>
-        </div>
+          <article>
+            <span class="project-icon">▶</span>
+            <div>
+              <h3>YouTube Short Film “EMOTION”</h3>
+              <p>Short film by Nineking Official, 2020.</p>
+              <a href="https://www.youtube.com/watch?v=IMyEY6HNdqE" target="_blank" rel="noopener">Open Video</a>
+            </div>
+          </article>
 
-        <div class="section">
-            <h2>Riwayat Pendidikan</h2>
-            <ul>
-                <li>SMKS Rosma Karawang (2020-2023)</li>
-                <li>SMPN 2 Telukjambe Timur (2017-2020)</li>
-                <li>SDN Wadas 4 (2011-2017)</li>
-            </ul>
-        </div>
+          <article>
+            <span class="project-icon">🎮</span>
+            <div>
+              <h3>Pengembangan Game Pemain Tunggal Indie</h3>
+              <p>Eksplorasi game indie dengan fokus pada gameplay dan pengalaman pemain.</p>
+            </div>
+          </article>
 
-        <div class="section">
-            <h2>Pengalaman</h2>
-            <h3>PKL</h3>
-            <ul>
-                <li>PT INDONESIAN THAI SUMMIT AUTO (20 November 2021 - 20 Mei 2022)</li>
-            </ul>
-            <h3>Proyek Pribadi</h3>
-            <ul>
-                <li>Video Class Rewind 2018 (2017 - 2018)</li>
-                <li>Youtube Short Film EMOTION by Nineking Official (14 Juni 2020)</li>
-                <li>Pengembangan Game Pemain Tunggal Indie (18 Juli 2024 - Sekarang)</li>
-            </ul>
-            <h3>Proyek Semester</h3>
-            <ul>
-                <li>Pengembangan UI Program Presensi Menggunakan Fitur Face Scan (6 Juli 2024)</li>
-                <li>Project Base Learning Kasir Toko Buku (1 Januari 2024 - 16 Januari 2024)</li>
-                <li>Final Project Penggambaran Aplikasi Pembelian Persenjataan Di GTA San Andreas (28 Juni 2024 - 8 Juli 2024)</li>
-            </ul>
-        </div>
+          <article>
+            <span class="project-icon">📚</span>
+            <div>
+              <h3>Project Based Learning Kasir Toko Buku</h3>
+              <p>Sistem kasir sederhana untuk studi kasus toko buku.</p>
+              <a href="https://github.com/faisalalrico/ProjectBasedLearning-FZL.git" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
 
-        <div class="section">
-            <h2>Kemampuan</h2>
-            <ul>
-                <h3>Entertainment</h3>
-                <ul>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Premiere Pro</li>
-                    <li>Adobe After Effects</li>
-                    <li>Adobe Lightroom</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Wondershare Filmora</li>
-                    <li>CapCut</li>
-                    <li>Clip Studio Paint</li>
-                    <li>IbisPaintX</li>
-                    <li>OBS Studio</li>
-                    <li>Figma</li>
-                </ul>
-                <h3>Game Engine / 3D</h3>
-                <ul>
-                    <li>Unity3D</li>
-                    <li>Godot</li>
-                    <li>Blender3D</li>
-                    <li>Mine-Imator</li>
-                    <li>VRoid Studio</li>
-                    <li>RPG Maker XP</li>
-                </ul>
-                <h3>Pemrograman</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>C#</li>
-                    <li>C++</li>
-                    <li>PHP</li>
-                </ul>
-                <h3>Jaringan</h3>
-                <ul>
-                    <li>Mikrotik</li>
-                    <li>Cisco Packet Tracer</li>
-                </ul>
-            </ul>
+          <article>
+            <span class="project-icon">🎯</span>
+            <div>
+              <h3>Final Project Pembelian Persenjataan GTA San Andreas</h3>
+              <p>Final project struktur data dengan tema aplikasi pembelian persenjataan.</p>
+              <a href="https://github.com/faisalalrico/FinalProject-DataStructure.git" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article>
+            <span class="project-icon">🚗</span>
+            <div>
+              <h3>RentThis</h3>
+              <p>Aplikasi sewa kendaraan mobile berbasis Ionic.</p>
+              <a href="https://github.com/faisalalrico/rentthis-ionic-beta.git" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
         </div>
-    </div>
+      </article>
+
+      <aside class="quote-card reveal">
+        <p>Belajar. Berkarya. Membangun masa depan dengan teknologi & kreativitas.</p>
+        <span>P3R // CV LOADED</span>
+      </aside>
+    </section>
+
+    <section class="contact-panel reveal" id="contact">
+      <div>
+        <p class="kicker">CONTACT COMMAND</p>
+        <h2>Hubungi Saya</h2>
+        <p>Terbuka untuk kolaborasi proyek kreatif, editing video, UI web, dan eksplorasi AI.</p>
+      </div>
+
+      <div class="contact-actions">
+        <a class="p3-btn" href="mailto:faisalalrico7@gmail.com">Email</a>
+        <a class="p3-btn ghost" href="https://github.com/faisalalrico" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Faisal Alrico</span>
+    <span>Persona-inspired CV web profile</span>
+  </footer>
+
+  <button class="top-btn" id="topBtn" type="button" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>

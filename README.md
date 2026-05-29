@@ -1,16 +1,32 @@
-## Hi there 👋
+# Faisal Alrico — Persona 3 Reload Inspired CV Web
 
-<!--
-**faisalalrico/faisalalrico** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Static CV website siap deploy ke GitHub Pages.
 
-Here are some ideas to get you started:
+## Isi Folder
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```txt
+index.html
+styles.css
+script.js
+img/profile.jpg
+```
+
+## Cara Jalankan Lokal
+
+Buka `index.html` langsung di browser, atau pakai VS Code Live Server.
+
+## Deploy ke GitHub Pages
+
+1. Buat repository baru di GitHub.
+2. Upload semua file di folder ini ke repository.
+3. Buka **Settings → Pages**.
+4. Pada bagian **Build and deployment**, pilih:
+   - Source: `Deploy from a branch`
+   - Branch: `main`
+   - Folder: `/root`
+5. Save.
+6. Tunggu beberapa menit sampai URL GitHub Pages aktif.
+
+## Catatan
+
+Desain ini dibuat sebagai CV digital dengan gaya visual game UI, terinspirasi dari Persona 3 Reload, tetapi tetap original dan tidak memakai aset resmi game.
